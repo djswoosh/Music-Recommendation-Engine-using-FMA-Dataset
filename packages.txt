@@ -1,1 +1,1 @@
-lux-widget version >=0.1.2
+lux-api >=0.4.0
