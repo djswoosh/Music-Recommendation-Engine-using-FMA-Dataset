@@ -30,8 +30,9 @@ with correlation:
 	def app():
 		st.title('Correlation')
 		st.write('Check out these correlation charts')
-		df = pd.read_csv('swooshstreams.html')
-		html_content = df
+		df = pd.read_csv('https://github.com/djswoosh/Music-Recommendation-Engine-using-FMA-Dataset/blob/34358fa97a8dd8277a72ea5cfc77565adc7f33d9/swooshstreams.csv')
+		export_file = 'swooshstremas.html'
+		html_content = ('https://github.com/djswoosh/Music-Recommendation-Engine-using-FMA-Dataset/blob/34358fa97a8dd8277a72ea5cfc77565adc7f33d9/swooshstreams.html')
 		components.html(html_content, width=800, height=350)
 
 	app()
