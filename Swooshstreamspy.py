@@ -30,8 +30,7 @@ with correlation:
 	def app():
 		st.title('Correlation')
 		st.write('Check out these correlation charts')
-		df = pd.read_csv('swooshstreams.csv')
-		export_file = 'swooshstreams.html'
+		df = pd.read_csv('swooshstreams.html')
 		html_content = df
 		components.html(html_content, width=800, height=350)
 
