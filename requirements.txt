@@ -4,5 +4,5 @@ numpy>=1.16.5
 pandas
 scikit-learn>=0.22
 matplotlib>=3.0.0
-lux-api>=0.4.0
+lux-widget>=0.4.0
 autopep8>=1.5
