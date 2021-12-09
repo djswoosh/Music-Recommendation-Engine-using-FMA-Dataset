@@ -29,9 +29,12 @@ with correlation:
 	def app():
 		st.title('Correlation')
 		st.write('Check out these correlation charts')
-		components.iframe("https://github.com/djswoosh/Music-Recommendation-Engine-using-FMA-Dataset/blob/main/swooshstreams.html", width = 800, height = 350)
+		df = pd.read_csv('swooshstreams.csv', header =0)
+		export_file = 'swooshstreams.html'
+		html_content = df.save_as_html(output=True)
+		components.html(html_content, width=800, height=350)
 
-
+	app()
 
 
 
