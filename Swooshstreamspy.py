@@ -29,7 +29,9 @@ with correlation:
 	def app():
 		st.title('Correlation')
 		st.write('Check out these correlation charts')
-		html_content = ('https://github.com/djswoosh/Music-Recommendation-Engine-using-FMA-Dataset/blob/685d6e95d9205bf19dd30a502543d209f937795e/swooshstreams.html')
+		df = lux.LuxDataFrame(pd.read_csv('swooshstreams.csv'))
+		export_file = 'swooshstreams.html'
+		html_content = df.save_as_html(output=True)
 		components.html(html_content, width=800, height=350)
 
 	app()
