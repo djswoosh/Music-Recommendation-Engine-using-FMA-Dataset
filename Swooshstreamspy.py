@@ -154,7 +154,7 @@ with header:
 
 with dataset:
 	st.header('The Echo Nest Dataset (Taken from the Free Music Archive)')
-	st.image('/Users/SwooshHome/Desktop/frontend/data/1200px-The_Echo_Nest_logo.svg.png')
+	st.image('https://github.com/djswoosh/Music-Recommendation-Engine-using-FMA-Dataset/blob/b33a141df9c7e08950bf23e9400854fbad407552/1200px-The_Echo_Nest_logo.svg.png')
 	st.text('This Dataset is publically available from the UCI repository')
 
 	swooshstreams = pd.read_csv('swooshstreams.csv')
