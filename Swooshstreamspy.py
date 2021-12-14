@@ -155,7 +155,7 @@ with header:
 
 with dataset:
 	st.header('The Echo Nest Dataset (Taken from the Free Music Archive)')
-	st.image("https://drive.google.com/file/d/1X3KkftrGfIwPoJy7z4rCoTAv2cnZCnoS/view?usp=sharing", width=350)
+	st.image("/1200px-The_Echo_Nest_logo.svg.png", width=350, output_format= 'PNG')
 	st.text('This Dataset is publically available from the UCI repository')
 
 	swooshstreams = pd.read_csv('swooshstreams.csv')
