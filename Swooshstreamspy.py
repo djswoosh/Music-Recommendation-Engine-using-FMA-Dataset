@@ -153,8 +153,8 @@ with header:
 
 
 with dataset:
-	st.header(htp7='The Echo Nest Dataset (Taken from the Free Music Archive)')
-	st.image('https://github.com/djswoosh/Music-Recommendation-Engine-using-FMA-Dataset/blob/ac1c2c309c5fb28d1ca9b53c59d084598d4f6fd2/1200px-The_Echo_Nest_logo.svg.png', width =800, height = 350)
+	st.header('The Echo Nest Dataset (Taken from the Free Music Archive)')
+	st.image(htp7='https://github.com/djswoosh/Music-Recommendation-Engine-using-FMA-Dataset/blob/ac1c2c309c5fb28d1ca9b53c59d084598d4f6fd2/1200px-The_Echo_Nest_logo.svg.png', width =800, height = 350)
 	st.text('This Dataset is publically available from the UCI repository')
 
 	swooshstreams = pd.read_csv('swooshstreams.csv')
